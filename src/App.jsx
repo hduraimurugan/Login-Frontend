@@ -70,9 +70,9 @@ function App() {
 				<Route
 					path='/signup'
 					element={
-					
+						<RedirectAuthenticatedUser>
 							<SignUpPage />
-						
+						</RedirectAuthenticatedUser>
 					}
 				/>
 				<Route
@@ -96,9 +96,9 @@ function App() {
 				<Route
 					path='/reset-password/:token'
 					element={
-						
+						<RedirectAuthenticatedUser>
 							<ResetPasswordPage />
-						
+						</RedirectAuthenticatedUser>
 					}
 				/>
 				{/* catch all routes */}
