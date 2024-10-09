@@ -70,9 +70,9 @@ function App() {
 				<Route
 					path='/signup'
 					element={
-						<RedirectAuthenticatedUser>
+					
 							<SignUpPage />
-						</RedirectAuthenticatedUser>
+						
 					}
 				/>
 				<Route
